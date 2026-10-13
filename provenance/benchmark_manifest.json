@@ -1,0 +1,115 @@
+{
+  "source_url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/results_long.json",
+  "flashvsr_v11": {
+    "torch": "2.14.0+cu130",
+    "settings": {
+      "seed": 2026,
+      "dtype": "BF16",
+      "scale": 4,
+      "sparse_ratio": 2,
+      "kv_ratio": 3,
+      "local_range": 11,
+      "color_fix": false,
+      "production_matched_low_resolution": "426\u00d7240",
+      "output_canvas": "1664\u00d7896"
+    }
+  },
+  "cases": [
+    {
+      "case": "female_default",
+      "label": "Female \u00b7 Default single-person",
+      "input": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/female_default_long_input.mp4",
+        "sha256": "e51d76017ab5c19644593db71b3c25e268ec61d1331c688fc28e5851d776792f",
+        "frames": 585
+      },
+      "flashvsr_v11": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/female_default_long_v11.mp4",
+        "sha256": "2fa6541799465344d6463fd6d42298ea9ccb501b80361c6d6c2fbd799753c526"
+      },
+      "tail_padding": {
+        "temporary_frames": 4
+      }
+    },
+    {
+      "case": "female_table",
+      "label": "Female \u00b7 At table",
+      "input": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/female_table_long_input.mp4",
+        "sha256": "42fb0e95f5495c35c9064f3ed1c8f8842fd9dc724a179350f8111caa7882ece5",
+        "frames": 585
+      },
+      "flashvsr_v11": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/female_table_long_v11.mp4",
+        "sha256": "2110f8406b8073670c2fbd18414d7902d2a58ccdf286b3af29da0838d1d0deaf"
+      },
+      "tail_padding": {
+        "temporary_frames": 4
+      }
+    },
+    {
+      "case": "female_chair",
+      "label": "Female \u00b7 Chair / resting arm",
+      "input": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/female_chair_long_input.mp4",
+        "sha256": "7cffc0ba334f848e73a6056eb33327f05dce9cbdca1fd123f9ac00b85e535209",
+        "frames": 585
+      },
+      "flashvsr_v11": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/female_chair_long_v11.mp4",
+        "sha256": "df8ef2b61f25cf4ec33f4349bb01a18e2e437e89e27c4596aaea516a95fcc9aa"
+      },
+      "tail_padding": {
+        "temporary_frames": 4
+      }
+    },
+    {
+      "case": "male_existing",
+      "label": "Male \u00b7 Existing production example",
+      "input": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/male_existing_long_input.mp4",
+        "sha256": "2dde69520c2d9c84b0c09670e7885654de4e070650ac772381c720fe2c9f3d00",
+        "frames": 576
+      },
+      "flashvsr_v11": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/male_existing_long_v11.mp4",
+        "sha256": "6ebcdb3818fba7ae226a003ceeeeb723a0fc6ea67bbcf3d1251520644892d361"
+      },
+      "tail_padding": {
+        "temporary_frames": 5
+      }
+    },
+    {
+      "case": "male_mixed_default",
+      "label": "Male review \u00b7 Default alternating-speaker source",
+      "input": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/male_mixed_default_long_input.mp4",
+        "sha256": "ef11b176a2f32ed772dece984d69e931a4201e0a823e82d363300d09f36fe4db",
+        "frames": 574
+      },
+      "flashvsr_v11": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/male_mixed_default_long_v11.mp4",
+        "sha256": "9d1f3a84b3732ceb9d59a90e27ae3d91d7fdd20d05963873ab2ec06d3356937d"
+      },
+      "tail_padding": {
+        "temporary_frames": 7
+      }
+    },
+    {
+      "case": "male_mixed_table",
+      "label": "Male review \u00b7 At-table alternating-speaker source",
+      "input": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/male_mixed_table_long_input.mp4",
+        "sha256": "075758fce21256e5be57a4f36423093588af6f770b34dacafb14d4b677e007d6",
+        "frames": 574
+      },
+      "flashvsr_v11": {
+        "url": "https://s3.renderplatform.com/user-assets/preview/agent/flashvsr-six-realistic-20260917-35a25def6d/male_mixed_table_long_v11.mp4",
+        "sha256": "169721df2c7f2f95d37aeeb07e9ab52db774a9b228f75078686fd77751da9b18"
+      },
+      "tail_padding": {
+        "temporary_frames": 7
+      }
+    }
+  ]
+}

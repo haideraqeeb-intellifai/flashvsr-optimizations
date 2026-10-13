@@ -1,0 +1,10 @@
+.venv/
+.cache/
+__pycache__/
+vendor/
+models/
+inputs/
+references/
+logs/
+outputs/
+*.partial

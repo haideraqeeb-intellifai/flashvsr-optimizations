@@ -1,0 +1,2 @@
+# Added to the existing PyTorch 2.14.0+cu130 runtime.
+flashinfer-python==0.7.0.post1
