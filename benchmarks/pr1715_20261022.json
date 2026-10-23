@@ -1,0 +1,43 @@
+{
+  "source_pr": "https://github.com/strontiumcorp/script2video/pull/1715",
+  "source_head": "f9a58c5ba202a1c72765ea7860ecfd51b7e35b0e",
+  "host": "gpu5090-03",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "driver": "595.84",
+  "setup": "flashvsr-pr1715-environment-reproduction.txt; warm compiled cache and cached assets; local-copy upload; no queue or callback",
+  "request": {
+    "prompt": "A small red ball rolls slowly across a wooden table in a bright room. Static camera, natural daylight, smooth realistic motion.",
+    "seed": 7,
+    "width": 1280,
+    "height": 736,
+    "final_width": 1280,
+    "final_height": 736,
+    "num_frames": 241,
+    "fps": 24.0,
+    "pipeline_mode": "distilled",
+    "model": "fp8",
+    "enhance_prompt": false
+  },
+  "new_code_request_seconds": {
+    "same_worker_off_fast_off_fast": [63.859786, 75.816243, 57.108773, 70.189151],
+    "fresh_parent_fast": 80.900883,
+    "fresh_parent_off": 64.537974
+  },
+  "earlier_same_host_request_seconds": {
+    "warm_worker_off": 56.390949,
+    "warm_worker_fast": 79.000523,
+    "fresh_parent_off": 64.237,
+    "fresh_parent_fast": 87.804941
+  },
+  "new_code_stages_seconds": {
+    "warm_fast_ltx_generation_and_export": 56.463463,
+    "warm_fast_complete_sr": 13.69,
+    "warm_fast_prepare_video": 0.164085,
+    "warm_fast_run_official": 12.318622,
+    "warm_fast_finish_video": 0.745489,
+    "fresh_fast_complete_sr": 17.0,
+    "fresh_fast_run_official": 15.623125
+  },
+  "output_checks": "All six outputs: 1280x736, 241 frames, 24 fps",
+  "note": "Individual runs, not averages. Real object-store upload, environment installation, asset downloads, queue time and callbacks excluded."
+}

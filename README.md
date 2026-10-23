@@ -1,5 +1,18 @@
 # FlashVSR v1.1 optimization and chunked input benchmarks
 
+## PR #1715 preprocessing and parent-process adapter
+
+The [PR #1715 adapter](ml_modules/flashvsr_v11/README.md) is now included as a
+separate, inspectable implementation. It adds lossless ultrafast staging,
+passes known frame count and dimensions to the input queue, overlaps initial
+frame preparation with model setup, and reuses a configured FlashVSR model in
+the parent process with CPU master weights. A local-video entry point is
+[`run_pr1715_video.py`](run_pr1715_video.py). Its exact request inputs and
+single-run timings are in [`benchmarks/pr1715_20261022.json`](benchmarks/pr1715_20261022.json).
+
+The new adapter uses the PR's Python 3.10 / Torch 2.10 stack; the original
+six-clip study below retains its Python 3.12 / Torch 2.14 setup and results.
+
 Code for the six-clip RTX 5090 FlashVSR v1.1 Tiny Long study. The combined optimization uses layer/head BF16 sparse attention, NVFP4 transformer FFNs, an FP8 decoder, BF16 Conv3D layout/autotuning, and FP8 LQ Conv3D 2. The original local study averaged **29.7018 s of synchronized inference** across six clips. The subsequent input study overlaps preparation with inference through a bounded 32-frame producer queue. Its pixel-exact GPU path averaged **44.8566 s per finished video**, versus **53.1887 s** for the earlier eager control.
 
 These measurements are historical single warmed passes per clip. Chunked model-phase times include overlapping input preparation and cannot be treated as isolated model timings.

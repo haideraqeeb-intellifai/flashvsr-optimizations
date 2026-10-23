@@ -1,5 +1,7 @@
 .venv/
+.venv-pr1715/
 .cache/
+cache/
 __pycache__/
 vendor/
 models/
